@@ -217,6 +217,7 @@ img {
   background-color: var(--active-bg-color);
   min-width: 216px;
   height: 50px;
+  border: none;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -406,7 +407,7 @@ img {
   letter-spacing: 0.03em;
   color: var(--main-color);
   text-align: center;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .clients-list {
@@ -414,16 +415,18 @@ img {
   gap: 30px;
 }
 
-.clients-item {
+/* .clients-item {
   border: 1px solid #afb1b8;
   border-radius: 4px;
-}
+} */
 .clients-link {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 170px;
   height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
   transition: border 250ms var(--transition-timing-fun),
     fill 250ms var(--transition-timing-fun);
 }
@@ -543,6 +546,10 @@ footer {
   fill: var(--secondary-color);
 }
 
+.subscribe {
+  margin-left: 93px;
+}
+
 .subscribe-header {
   font-size: 14px;
   line-height: 1.14;
@@ -575,6 +582,8 @@ footer {
   color: var(--secondary-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  font-weight: 700;
+  border: none;
   font-size: 16px;
   text-align: center;
   letter-spacing: 0.06em;
@@ -733,12 +742,17 @@ footer {
   background-color: var(--main-background-color);
   transform: translate(-50%, -50%) scale(1);
   transition: transform 300ms linear;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding: 40px;
+  border-radius: 4px;
 }
 
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-close-icon:hover,
+.modal-close-icon:focus {
+  fill: var(--active-bg-color);
 }
 
 .modal-btn {
@@ -766,7 +780,6 @@ footer {
   font-weight: 700;
   font-size: 20px;
   text-align: center;
-  margin-top: 40px;
   margin-bottom: 12px;
 }
 
@@ -775,7 +788,6 @@ footer {
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  margin-bottom: 28px;
   padding-left: 42px;
   outline: transparent;
 }
@@ -799,6 +811,16 @@ footer {
   top: 50%;
   transform: translateY(-50%);
   left: 12px;
+}
+
+.modal-label-name {
+  display: block;
+  margin-top: 12px;
+}
+
+.modal-label {
+  display: block;
+  margin-top: 10px;
 }
 
 .modal-label-text {
@@ -829,6 +851,7 @@ footer {
   color: #757575;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .check-icon {
@@ -870,17 +893,18 @@ footer {
   color: var(--secondary-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  border: none;
   font-size: 16px;
   text-align: center;
   letter-spacing: 0.06em;
   background-color: var(--active-bg-color);
   min-width: 200px;
   height: 50px;
-  margin-bottom: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 30px auto 40px;
+  margin: 30px auto 0;
+  font-weight: 700;
 }
 
 .modal-button:hover .modal-button:focus {
